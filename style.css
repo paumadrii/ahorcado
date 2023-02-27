@@ -1,0 +1,343 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+}
+
+
+.container{
+    border: 2px solid white;
+    width: 1200px;
+    height: 1000px;
+    text-align: center;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area{
+  text-align:center;
+  font: size 5px;
+  color:#fff;
+  letter-spacing: 1px;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur .75s ease-out infinite;
+  text-shadow:0px 0px 5px #fff,
+      0px 0px 7px #fff;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+
+
+
+
+
+.stripes{
+    justify-content: flex-end;
+    color: white;
+    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin: 10px;
+
+}
+.sharewords{
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.draw{
+    
+    width: 1000px;
+    height: 550px;
+    margin: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+    font-size: 5rem;
+    background:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_net.png') repeat;
+   font-family: "Open Sans",  Impact;
+}
+p{
+    color: red;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#d1{
+    width: auto;
+    height: fit-content;
+}
+#supStick{
+    width: 200px;
+    height: 10px;
+    background-color: white;
+}
+
+#stick{
+  
+    width: 10px;
+    height: 480px;
+    background-color: white;
+}
+
+#base{
+    width: 300px;
+    height: 10px;
+    background-color: white;
+
+}
+#man{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: -57px;
+    top: -82px;
+}
+
+#man div{
+    visibility: hidden;
+}
+#stick-man{
+   
+    display: flex;
+    height: 480px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+.soga{
+    width: 7px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+}
+.cabeza{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    border: 7px solid red;
+}
+
+.panza{
+    width: 7px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+.bizq{
+    width: 7px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 34px;
+    top: 18px;
+}
+.bder{
+    width: 7px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -34px;
+    top: 18px;
+}
+
+.pizq{
+    width: 7px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 34px;
+    bottom: -80px;
+}
+.pder{
+    width: 7px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -34px;
+    bottom: -80px;
+}
+.sms{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    color: yellow;
+    border: 2px solid white;
+}
+.buttons{
+    margin: 50px;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.prove:hover{
+    background-color: red;
+    color: white;
+    border: white 1px;
+    
+}
+.reset:hover{
+    background-color: red;
+    color: white;
+    border: white 1px;
+}
+.loser{
+    display: none;
+    height: auto;
+    width: 1000px;
+    margin: 10px;
+    margin-left: initial;
+    align-items: center;
+    position: fixed;
+    color: #fff;
+    justify-content: center;
+    font-size: 7.5rem;
+}
+.winner{
+    display: none;
+    height: 333px;
+    width: 1000px;
+    margin: 10px;
+    margin-left: initial;
+    align-items: center;
+    position: fixed;
+    color: #fff;
+    justify-content: center;
+    font-size: 7.5rem;
+}
+.reload{
+    
+    position: fixed;
+    /* bottom: -30px; */
+    margin-top: 50%;
+    width: 200px;
+    height: 100px;
+    font-size: 2rem;
+    font-family: ui-sans-serif;
+}
+
+  @media screen and (max-width: 500px) {
+    body{
+        display: flex;
+        background: black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+   .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+   }
+   h1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    align-items: center;
+    font-size: 4rem
+   }
+   .draw{
+    width: 100%;
+    height: 100vh;
+    margin: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+   }
+   #d1 {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.check{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.stripes{
+    font-size: 2rem;
+}
+#supStick{
+    width: 150px;
+    height: 10px;
+    background-color: white;
+}    
+  }
+  @media screen and (min-width: 768px) {
+    /* For desktop: */
+   
+  }
+
+
+
+
+
+
